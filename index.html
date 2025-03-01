@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- poppins font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-base-200">
+    <header>
+        <nav class="m-2">
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="flex-1">
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/logo.png" alt="">
+                        <p class="text-3xl">Dev<span class="font-bold">Board</span></p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div class="flex gap-2 bg-[#F4F7FF] p-2 rounded-full items-center">
+                        <img src="assets/checkbox.png" alt="">
+                        <span class="text-3xl font-bold ">23</span>
+                    </div>
+                    <div class="">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 bg-[#F4F7FF] p-2 rounded-full">
+                                <img src="assets/theme-btn.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="grid rounded-xl grid-cols-4 m-6 gap-6 ">
+        <section class="col-span-3 rounded-xl bg-base-100 p-4 border-b-2 border-gray-800 border-dashed ">
+            <div class="navbar grid grid-cols-4 gap-4 ">
+                <div class="navbar-start rounded-xl w-full h-full p-4 bg-[#F4F7FF]">
+                    <div class="pr-4">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p>Task Assigned</p>
+                        <h3 class="text-3xl font-bold">06</h3>
+                    </div>
+                </div>
+                <div class="navbar-center p-4  w-full  h-full col-span-2  bg-linear-to-r from-[#3752FD] rounded-xl to-[#9BA8F8] ">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-white text-xl">Discover Something<br>New Today!</p>
+                </div>
+                <div class="flex rounded-xl justify-center items-center w-full m-4 h-full  bg-[#F4F7FF]">
+                    <img src="assets/calender.png" alt="">
+                </div>
+            </div>
+            <!-- card section  -->
+            <section class="m-2 pt-4 border-t-2 border-gray-300 border-dashed">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-[#F4F7FF] p-4 rounded-xl">
+                        <h3 class="bg-white w-fit px-2">ShopEase</h3>
+                        <h2 class="text-xl ">Fix Mobile Button Issue</h2>
+                        <p class="h-24 rounded-xl overflow-hidden p-4 bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                        <div class="flex justify-between border-t-2 border-gray-300 border-dashed p-2 items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <p class="font-bold">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-primary">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+        </section>
+        <!-- activity log section  -->
+        <section class="bg-white rounded-xl p-4">
+                <div class="flex justify-center gap-2 items-center">
+                    <img src="assets/activity.png" alt="">
+                    <h3>Activity Log</h3>
+                </div>
+                <div class="text-center py-4 border-b-2 border-gray-300 border-dashed">
+                    <button class="btn btn-primary">Clear History</button>
+                </div>
+                <div>
+                    
+                </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
