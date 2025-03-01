@@ -25,7 +25,7 @@
 </head>
 
 <body class="bg-base-200">
-    <header>
+    <header >
         <nav class="m-2">
             <div class="navbar bg-base-100 shadow-sm">
                 <div class="flex-1">
@@ -41,7 +41,7 @@
                     </div>
                     <div class="">
                         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                            <div class="w-10 bg-[#F4F7FF] p-2 rounded-full">
+                            <div id="btn-theme" class="w-10 bg-[#F4F7FF] p-2 rounded-full">
                                 <img src="assets/theme-btn.png" alt="">
                             </div>
                         </div>
@@ -52,7 +52,7 @@
         </nav>
     </header>
     <main class="grid rounded-xl grid-cols-4 m-6 gap-6 ">
-        <section class="col-span-3 rounded-xl bg-base-100 p-4 border-b-2 border-gray-800 border-dashed ">
+        <section class="col-span-3 rounded-xl bg-base-100 p-4 ">
             <div class="navbar grid grid-cols-4 gap-4 ">
                 <div class="navbar-start rounded-xl w-full h-full p-4 bg-[#F4F7FF]">
                     <div class="pr-4">
@@ -63,7 +63,7 @@
                         <h3 id="task-left" class="text-3xl font-bold">06</h3>
                     </div>
                 </div>
-                <div class="navbar-center p-4  w-full  h-full col-span-2  bg-linear-to-r from-[#3752FD] rounded-xl to-[#9BA8F8] ">
+                <div id="blog-box" class="navbar-center p-4  w-full  h-full col-span-2  bg-linear-to-r from-[#3752FD] rounded-xl to-[#9BA8F8] ">
                     <img src="assets/board.png" alt="">
                     <p class="text-white text-xl">Discover Something<br>New Today!</p>
                 </div>
@@ -185,6 +185,12 @@
 
     </main>
     
+    <script>
+        document.getElementById('btn-theme').addEventListener('click', () => {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
     <script src="script/main.js"></script>
     <script src="script/clr-activity.js"></script>
     <script src="script/date.js"></script>
