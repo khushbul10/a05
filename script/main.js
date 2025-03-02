@@ -1,9 +1,4 @@
-// let parent;
-// document.getElementsByClassName('btn-completed')
-// console.log(btnCompleted);
-// btnCompleted.addEventListener('click', function() {
 
-// });
 document.querySelectorAll('.btn-completed').forEach(button => {
     button.addEventListener('click', (e) => {
         let card = e.target.closest('.card');

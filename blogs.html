@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
     <!-- daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -43,34 +44,54 @@
         <div>
             <div class="bg-white shadow-sm mt-4">
                 <h3 class="font-bold p-4 text-xl border-b-2 border-gray-300 border-dashed  ">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:</p>
+                <div class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:
+                    <ol class="list-decimal px-6">
+                        <li>By ID-getElementById()</li>
+                        <li>By Class Name-getElementsByClassName()</li>
+                        <li>By Tag Name-getElementsByTagName()</li>
+                        <li>By CSS Selector (First Match)-querySelector()</li>
+                        <li>By CSS Selector (All Matches)-querySelectorAll()</li>
+                    </ol>
+                </div>
             </div>
             <div class="bg-white shadow-sm mt-4">
                 <h3 class="font-bold p-4 text-xl border-b-2 border-gray-300 border-dashed  ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
-                <p class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:</p>
+                <p class="text-xl p-4">
+                    1. innerHTML: Retrieves or sets the HTML content inside an element.
+                    <br>
+                    2. innerText: Retrieves or sets the visible text content of an element.
+                    <br>
+                    3. textContent: Retrieves or sets the text content of an element including hidden text.
+                </p>
             </div>
             <div class="bg-white shadow-sm mt-4">
                 <h3 class="font-bold p-4 text-xl border-b-2 border-gray-300 border-dashed  ">Question-3: What is event delegation in the DOM?
 
                 </h3>
-                <p class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:</p>
+                <p class="text-xl p-4">Event delegation is a technique where a single event listener is added to a parent element to handle events on its child elements, including those added dynamically.</p>
             </div>
             <div class="bg-white shadow-sm mt-4">
                 <h3 class="font-bold p-4 text-xl border-b-2 border-gray-300 border-dashed  ">Question-4: What is event bubbling in the DOM?
 
 
                 </h3>
-                <p class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:</p>
+                <p class="text-xl p-4">Event bubbling is a mechanism in the DOM where an event starts at the target element and propagates up through its parent elements until it reaches the root.</p>
             </div>
             <div class="bg-white shadow-sm mt-4">
                 <h3 class="font-bold p-4 text-xl border-b-2 border-gray-300 border-dashed  ">Question-5: How do you create, add, and remove elements using JavaScript?
                 </h3>
-                <p class="text-xl p-4">Answer: There are multiple ways to select an element in the DOM. Some of them are:</p>
+                <p class="text-xl p-4">1. Create an Element using document.createElement().
+                    <br>
+                    2. Add an Element using append(), appendChild(), prepend().
+                    <br>
+                    3. Remove an Element using removeChild() or remove().
+                </p>
             </div>
         </div>
     </main>
 
     <script>
+        document.documentElement.style.backgroundColor = '#F4F7FF';
         const backBtn = document.getElementById('back-btn');
         backBtn.addEventListener('click', () => {
             window.location.href = 'index.html';
